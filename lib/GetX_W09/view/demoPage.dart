@@ -13,11 +13,10 @@ class DemoPage extends StatelessWidget{
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(Get.arguments,
+              child: Text(Get.arguments)),
                 SwitchListTile(
                   value: ctrl.isDark,
                 title: Text('Touch to change ThemeMode'),
@@ -47,7 +46,6 @@ class DemoPage extends StatelessWidget{
               ElevatedButton(
                 onPressed: ()=> Get.offNamed('/'),
                 child: Text('Back To Home')),
-              )),
           ],
         ),
       ),
